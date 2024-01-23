@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .unique {
+        text-align: center;
+
+    }
+
+    .collapsible {
+        background-color: #00578e;
+        color: white;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+    }
+
+    .active,
+    .collapsible:hover {
+        background-color: #006fb5;
+    }
+
+    .content {
+        padding: 0 18px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        background-color: #f1f1f1;
+    }
+
+    /*scroll bar*/
+    body {
+        overflow: scroll;
+    }
+
+    /*Navbar*/
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+        background-color: #111;
+    }
+
+    .active {
+        background-color: #04AA6D;
+    }
+
+    /*sticky image*/
+    img.sticky {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        width: 200px;
+    }
+
+    table {
+        font-family: arial, sans-serif;
+        width: 100%;
+    }
+
+    /*table styling*/
+    td,
+    th {
+        border: 1px solid #dddddd;
+        padding: 8px;
+        text-align: center;
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+    }
+
+    /* Next & previous buttons */
+    .prev,
+    .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Caption text */
+    .text {
+        color: #f2f2f2;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+        background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+    @keyframes fade {
+        from {
+            opacity: .4
+        }
+
+        to {
+            opacity: 1
+        }
+    }
+
+    /* text size */
+    @media only screen and (max-width: 300px) {
+
+        .prev,
+        .next,
+        .text {
+            font-size: 11px
+        }
+    }
+
+    .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 100px;
+        color: #f6f3f3;
+    }
+</style>
+</head>
+
+<body>
+
+    <ul class="">
+        <li><a href="#logo"><img style="img.sticky"
+                    src="https://www.vaughan.ca/themes/custom/city_of_vaughan/images/logo.svg" alt=""></a></li>
+        <li><a href="ottawa.html">Ottawa</a></li>
+        <li><a href="Toronto cul.html">Toronto</a></li>
+        <li><a href="Brampton cul.html">Brampton</a></li>
+        <li><a href="Hamilton cul.html">Hamilton</a></li>
+        <li><a href="Homepage.html">HomePage</a></li>
+
+    </ul>
+
+    <img src="https://myvmc.ca/wp-content/uploads/2020/12/NORM-LI_201210_EXT_AERIAL_VF_00-option-scaled.jpg"
+        alt="Avatar">
+    <div class="centered">
+        <h1>Vaughan</h1>
+    </div>
+
+    <button class="collapsible"><img
+            src="https://www.hamilton.ca/sites/default/files/2022-08/icon_supported-housing.svg" alt="">Housing
+        options</button>
+    <div class="content">
+        <p>
+            Housing in Vaughan, Ontario, is characterized by a diverse and growing real estate market.<br> The city
+            offers a mix of residential options, including single-family homes, condominiums, and townhouses.<br> The
+            Vaughan Metropolitan Centre (VMC) has witnessed significant urban development, leading to the construction
+            of modern condominiums and high-rise apartments, catering to those seeking a more urban lifestyle.<br> The
+            city's various neighborhoods provide a range of housing styles, accommodating different preferences and
+            needs.<br> Proximity to amenities such as Vaughan Mills, one of Canada's largest shopping malls, and access
+            to well-maintained parks and recreational facilities contribute to the overall appeal of living in
+            Vaughan.<br> While the real estate market can be competitive, the city's strategic location, economic
+            opportunities, and community amenities make it an attractive destination for homebuyers and investors alike.
+        </p>
+    </div>
+    <button class="collapsible"><img
+            src="https://www.hamilton.ca/sites/default/files/2022-08/icon_current-opportunities_2.svg" alt="">Job
+        opportunities</button>
+    <div class="content">
+        <p>
+            The job market in Vaughan, Ontario, is diverse and dynamic, reflecting the city's economic growth and
+            development.<br> With the Vaughan Metropolitan Centre (VMC) emerging as a major business and commercial
+            district, there are job opportunities across various sectors, including finance, technology, healthcare, and
+            retail.<br> The VMC's strategic location has attracted businesses and contributed to job creation.<br>
+            Additionally, the city's proximity to Toronto expands employment possibilities for residents.<br> Vaughan's
+            economic landscape is further complemented by its thriving retail sector, with Vaughan Mills being a major
+            employer.<br> The city's commitment to infrastructure development, including transportation projects, also
+            generates employment in construction and related industries.<br> Overall, Vaughan provides a range of job
+            opportunities, making it an attractive place for those seeking career growth and professional advancement.
+        </p>
+    </div>
+    <button class="collapsible"><img
+            src="https://www.hamilton.ca/sites/default/files/2022-09/icon_outreacheducation.svg"
+            alt="">Education</button>
+    <div class="content">
+        <p>
+            Vaughan, Ontario, boasts a well-established education system, providing residents with a range of
+            educational opportunities from primary to post-secondary levels.<br> The city is served by several school
+            boards, including the York Region District School Board and the York Catholic District School Board,
+            offering a variety of public elementary and secondary schools.<br> Vaughan is also home to private and
+            alternative educational institutions, providing additional options for families.
+
+            Post-secondary education is accessible through the presence of York University, which has a campus in the
+            Vaughan Metropolitan Centre (VMC).<br> This campus contributes to the city's educational landscape, offering
+            undergraduate and graduate programs</p>
+    </div>
+    <button class="collapsible"><img style="padding-left:9px;"
+            src="https://www.hamilton.ca/sites/default/files/2022-09/Icon-hospital.svg" alt="">Healthcare</button>
+    <div class="content">
+        <p>
+            Vaughan, Ontario, offers a comprehensive healthcare infrastructure to cater to the needs of its
+            residents.<br> The city is served by various medical facilities, including hospitals, clinics, and
+            healthcare centers.<br> Mackenzie Health, with its Vaughan location, is a prominent hospital providing a
+            range of medical services, including emergency care, specialized treatments, and community health programs.
+        </p>
+    </div>
+    <button class="collapsible"><img style="padding-right:77px;clip: rect(0px,100px,500px,-500px);"
+            src="https://www.hamilton.ca/sites/default/files/2022-04/icon_bus_0.svg" alt="">Transportation</button>
+    <div class="content">
+        <p>Vaughan is strategically located near major highways, providing efficient travel to neighboring cities.<br>
+            It is served by York Region Transit, YRT, and the Toronto Transit Commission.<br> The city is committed to
+            sustainable transportation, with improved cycling lanes and pedestrian pathways.</p>
+    </div>
+    <button class="collapsible"><img src="https://www.hamilton.ca/sites/default/files/2022-09/icon_budget.svg" alt="">
+        Cost of living comparison</button>
+    <div class="content">
+        <p>
+            The cost of living in Vaughan, Ontario, is generally considered to be relatively high compared to some other
+            areas in Canada.<br> Several factors contribute to the overall cost of living in Vaughan:
+
+            Housing Costs: The real estate market in Vaughan can be competitive, with home prices and rental rates often
+            higher than the national average.<br> The demand for housing, particularly in desirable neighborhoods,
+            influences overall living expenses.
+
+            Transportation Costs: While the city has a well-connected transportation network, commuting costs,
+            especially if relying on a personal vehicle, can contribute to the overall cost of living.<br> Public
+            transit, such as YRT/Viva and the subway extension, can be alternative options to manage transportation
+            expenses.
+
+            Utilities and Services: Costs for utilities, internet, and other essential services may align with or be
+            slightly above the national average.<br>
+
+            Groceries and Dining: The cost of groceries and dining out in Vaughan might be influenced by the city's
+            affluent status, potentially leading to higher expenses compared to some other regions.<br>
+
+            Education and Healthcare: Access to quality education and healthcare services may be associated with higher
+            costs, especially if considering private institutions or specific medical facilities.</p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 5</div>
+            <img src="https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcSDp6NkPo8in-I6zl2bJe3Cf-4pOif9z-S9aTFqPynv18ML_DSAovrS8DFg6VwUCV1SVgJTcPj_fC7BiAXMGWN6F0aV-mg6DJckZplN7A"
+                style="width:100%">
+            <div class="text">Woodbridge, a vibrant residential area in Vaughan, Ontario, offers a blend of urban living
+                and a strong community spirit, with its proximity to Toronto, green spaces, and well-connected
+                transportation.</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 5</div>
+            <img src="https://lh5.googleusercontent.com/p/AF1QipOnqhOorUvYB_YpQkcE336HE0Mbnrx2jc-L1TLI=w810-h468-n-k-no"
+                style="width:100%">
+            <div class="text">Yonge Street in Toronto is a vibrant urban area with diverse shops, restaurants, and
+                entertainment venues, reflecting the city's dynamic character and<br> popular destination for locals and
+                tourists.</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 5</div>
+            <img src="https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcT3SdDL2sHmRKbCbNkIlnisAio4QqBDEC_oNkT0V7H-_0q3e7aLBVENVQcerCHKpWoLHea_LXCpPRj4dzf0Oh4oh2jGovQCatDuwrOu1w"
+                style="width:100%">
+            <div class="text">Highways 404 and 407 are transportation routes throughout Vaughan, Canada, connecting
+                northern regions<br> and providing efficient travel options for commuters and businesses.</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 5</div>
+            <img src="https://www.narcity.com/media-library/canada-s-wonderland.jpg?id=34295517&width=1245&height=700&coordinates=0%2C60%2C0%2C60"
+                style="width:100%">
+            <div class="text">
+                Canada's Wonderland, is an amazing amusement park in Vaughan, Ontario, known for its extensive
+                collection of thrilling rides, roller coasters, live entertainment,<br> and themed attractions, making
+                it a popular destination for a diverse range of visitors.</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">5 / 5</div>
+            <img src="https://th.bing.com/th/id/R.5bb5a8bae0b1811995967e8282861e39?rik=RceguRBGukdI5A&riu=http%3a%2f%2fimg1.10bestmedia.com%2fImages%2fPhotos%2f220972%2fp-VM_54_990x660_201404240347.jpg&ehk=dOQ1JsgHgNZyV3PhfbnN7B0aaYzWbFL7E%2bXneUrxJ2U%3d&risl=&pid=ImgRaw&r=0"
+                style="width:100%">
+            <div class="text">Vaughan Mills, opened in 2004, is a major shopping destination in Canada, featuring over
+                200 stores, along with entertainment and dining options.</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="unique">
+        <p>
+        <h1>What makes Vaughan Unique?</h1><br>
+        <h3> Canada's Wonderland, a large amusement park, is situated in Vaughan.<br>
+            It's a major attraction, drawing visitors from far and wide and contributing to the city's entertainment and
+            tourism appeal.<br>
+            Vaughan Mills: One of the largest shopping malls in Canada, Vaughan Mills, is located in the city.<br>
+            It attracts visitors from both Vaughan and neighboring areas, contributing to the city's retail and tourism
+            sector.</p>
+        </h3>
+    </div>
+    <h2>
+        <p style="text-align: center;">We rate the affordability of vaughan a 7 out of 10, with 10 being the most
+            afforable</p>
+            <p style="color: #000000;">7/10 as a percent:
+                <script style="color: #f1f1f1;">document.write((7 / 10) * 100 + '%');</script>
+            </p>
+    </h2>
+    <script>
+        // When the user clicks on div, open the popup
+        function myFunction() {
+            var popup = document.getElementById("myPopup");
+            popup.classList.toggle("show");
+        }
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        }
+
+
+    </script>
+    <a style="font-size: 34px;" align="center" href="https://vaughan.ca/en">Vaughan website offical</a>
+
+</html>

@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<title>Ontario Homepage</title>
+
+<head>
+    <link rel="icon" type="image/x-icon"
+        href="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Flag_of_Ontario.svg/2400px-Flag_of_Ontario.svg.png">
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+
+    #section1 {
+        height: 600px;
+        background-color: pink;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover:not(.on) {
+        background-color: #111;
+    }
+
+    .on {
+        background-color: #303030;
+    }
+
+    body,
+    html {
+        height: 100%;
+        margin: 0;
+        font: 400 15px/1.8 "Lato", sans-serif;
+        color: #777;
+    }
+
+    .bgimg-1,
+    .bgimg-2,
+    .bgimg-3,
+    .bgimg-4,
+    .bgimg-5,
+    .bgimg-6 {
+        position: relative;
+        opacity: 0.65;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+    .bgimg-1 {
+        background-image: url("https://th.bing.com/th/id/R.eba207f3edb2ff642e5c0e928b51fb90?rik=78Kp%2byngQugBrg&riu=http%3a%2f%2fwww.wallpaperup.com%2fuploads%2fwallpapers%2f2015%2f03%2f06%2f632917%2feba207f3edb2ff642e5c0e928b51fb90.jpg&ehk=%2fbE9bihm3FHI%2bZosp%2bBEitEIMgbQOL6FnseKUjL8jJ8%3d&risl=&pid=ImgRaw&r=0");
+        min-height: 100%;
+    }
+
+    .bgimg-2 {
+        background-image: url("https://th.bing.com/th/id/R.eba207f3edb2ff642e5c0e928b51fb90?rik=78Kp%2byngQugBrg&riu=http%3a%2f%2fwww.wallpaperup.com%2fuploads%2fwallpapers%2f2015%2f03%2f06%2f632917%2feba207f3edb2ff642e5c0e928b51fb90.jpg&ehk=%2fbE9bihm3FHI%2bZosp%2bBEitEIMgbQOL6FnseKUjL8jJ8%3d&risl=&pid=ImgRaw&r=0");
+        min-height: 400px;
+    }
+
+    .bgimg-3 {
+        background-image: url("https://th.bing.com/th/id/R.eba207f3edb2ff642e5c0e928b51fb90?rik=78Kp%2byngQugBrg&riu=http%3a%2f%2fwww.wallpaperup.com%2fuploads%2fwallpapers%2f2015%2f03%2f06%2f632917%2feba207f3edb2ff642e5c0e928b51fb90.jpg&ehk=%2fbE9bihm3FHI%2bZosp%2bBEitEIMgbQOL6FnseKUjL8jJ8%3d&risl=&pid=ImgRaw&r=0");
+        min-height: 400px;
+    }
+
+    .bgimg-4 {
+        background-image: url("https://th.bing.com/th/id/R.eba207f3edb2ff642e5c0e928b51fb90?rik=78Kp%2byngQugBrg&riu=http%3a%2f%2fwww.wallpaperup.com%2fuploads%2fwallpapers%2f2015%2f03%2f06%2f632917%2feba207f3edb2ff642e5c0e928b51fb90.jpg&ehk=%2fbE9bihm3FHI%2bZosp%2bBEitEIMgbQOL6FnseKUjL8jJ8%3d&risl=&pid=ImgRaw&r=0");
+        min-height: 400px;
+    }
+
+    .bgimg-5 {
+        background-image: url("https://th.bing.com/th/id/R.eba207f3edb2ff642e5c0e928b51fb90?rik=78Kp%2byngQugBrg&riu=http%3a%2f%2fwww.wallpaperup.com%2fuploads%2fwallpapers%2f2015%2f03%2f06%2f632917%2feba207f3edb2ff642e5c0e928b51fb90.jpg&ehk=%2fbE9bihm3FHI%2bZosp%2bBEitEIMgbQOL6FnseKUjL8jJ8%3d&risl=&pid=ImgRaw&r=0");
+        min-height: 400px;
+    }
+
+    .bgimg-6 {
+        background-image: url("https://th.bing.com/th/id/R.eba207f3edb2ff642e5c0e928b51fb90?rik=78Kp%2byngQugBrg&riu=http%3a%2f%2fwww.wallpaperup.com%2fuploads%2fwallpapers%2f2015%2f03%2f06%2f632917%2feba207f3edb2ff642e5c0e928b51fb90.jpg&ehk=%2fbE9bihm3FHI%2bZosp%2bBEitEIMgbQOL6FnseKUjL8jJ8%3d&risl=&pid=ImgRaw&r=0");
+        min-height: 400px;
+    }
+
+    .caption {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 100%;
+        text-align: center;
+        color: #000;
+    }
+
+    .caption span.border {
+        background-color: #4a4a4a;
+        color: #fff;
+        padding: 18px;
+        font-size: 25px;
+        letter-spacing: 10px;
+    }
+
+    h3 {
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        font: 20px "Lato", sans-serif;
+        color: #111;
+    }
+
+    /* Turn off parallax scrolling for tablets and phones */
+    @media only screen and (max-device-width: 1024px) {
+
+        .bgimg-1,
+        .bgimg-2,
+        .bgimg-3,
+        .bgimg-4,
+        .bgimg-5,
+        .bgimg-6 {
+            background-attachment: scroll;
+        }
+    }
+
+    #myBtn {
+        display: none;
+        /* Hide the button by default */
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #001247ab;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 15px;
+        cursor: pointer;
+    }
+
+    #myBtn:hover {
+        background-color: #0d5fee;
+    }
+</style>
+
+<body>
+    <ul>
+        <li><a class="on" href="Hamilton cul.html">Homepage🍁</a></li>
+        <li><a href="ottawa.html">Ottawa</a></li>
+        <li><a href="Toronto cul.html">Toronto</a></li>
+        <li><a href="Vaughan.html">Vaughan</a></li>
+        <li><a href="Brampton cul.html">Brampton</a></li>
+        <li><a href="Hamilton cul.html">Hamilton</a></li>
+    </ul>
+
+    <div class="bgimg-1">
+        <div class="caption">
+            <span class="border">Affordable Living in Ontario</span>
+            <p class="border">Yours to Discover</p>
+        </div>
+    </div>
+
+    <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+        <h3 style="text-align:center;">Ontario</h3>
+        <p>Ontario is a province in east-central Canada that borders Quebec to the east, Manitoba to the northwest, and
+            the United States to the south. The most populated province in Canada, Ontario is home to Toronto, the
+            largest city in the nation. The Great Lakes, endless forests, and urban areas are just a few of the
+            province's diverse scenery. The economy of Ontario is very diverse, with important industries including
+            manufacturing, services, technology, and finance all having significant impacts. The provincial capital of
+            Ontario is a significant center for global finance and culture. The nation's capital, Ottawa, as well as
+            cities like Hamilton, Vaughan, Ottawa and Brampton are among Ontario's other noteworthy cities. Ontario is
+            home to multiple educational establishments, a thriving cultural scene, and stunning natural</p>
+        <img style="width: 470px; height: 160;"
+            src="https://3.bp.blogspot.com/-l8joAIcunC8/W0pHmk0sN1I/AAAAAAAApeM/tm10-X_kHSQZYLnEnXUsauKiBh6SD6zrgCLcBGAs/s1600/Flag_of_Ontario.gif">
+    </div>
+
+    <div class="bgimg-2">
+        <div class="caption">
+            <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">Ottawa</span>
+        </div>
+    </div>
+
+    <div style="position:relative;">
+        <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+            <p> Ottawa is the capital city of Canada, located in the province of Ontario. It is the fourth largest city
+                in the country and is known for its rich history, cultural diversity, and political significance. Ottawa
+                is home to many national institutions, including the Parliament of Canada and various museums and
+                galleries. The city is situated on the banks of the Ottawa River and offers a mix of modern urban
+                amenities and natural beauty. Major landmarks include Parliament Hill, the Rideau Canal, and the
+                National Gallery of Canada. Ottawa experiences a four-season climate, with cold winters and warm
+                summers. </p>
+            <a href="#Ottawa"></a><img style="width: 470px; height: 160;"
+                src="https://d3e1m60ptf1oym.cloudfront.net/e49c23ea-ce9a-4825-96b3-4b7b6a15ef15/16-06-10-0525_wqxga.jpg">
+        </div>
+    </div>
+
+    <div class="bgimg-3">
+        <div class="caption">
+            <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">Toronto</span>
+        </div>
+    </div>
+
+    <div style="position:relative;">
+        <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+            <p>In comparison to the other cities we selected, Toronto is a more expensive city. The high cost of
+                housing, both when buying and renting, was indicating the competitive real estate market in the city.
+                Due to inflation, everyday goods like groceries, utilities, and clothing were comparatively pricey,
+                Healthcare is funded through taxs. Although they provide entertainment, Toronto's vibrant cultural scene
+                and wide range of culinary options increase the cost of living overall. Affordability was also impacted
+                by the city's tax structure and the cost of education, especially for postsecondary education.</p>
+            <a href="#Toronto"></a><img style="width: 470px; height: 160;"
+                src="https://wallpapercave.com/wp/wp2197519.jpg">
+        </div>
+    </div>
+
+    <div class="bgimg-4">
+        <div class="caption">
+            <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">Vaughan</span>
+        </div>
+    </div>
+
+    <div style="position:relative;">
+        <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+            <p>Situated north of Toronto, Ontario, Canada is home to the city of Vaughan. Vaughan has become known for
+                its fast development and growth, turning it into a significant suburban center. It offers a wide range
+                of residential, commercial, and industrial areas and is home to a diverse population. One of Canada's
+                biggest malls, Vaughan Mills, attracts visitors with an extensive selection of retail stores and
+                entertainment venues. The city also has cultural attractions like the Vaughan Metropolitan Centre, which
+                houses a performing arts center, a library, and city hall. In addition, Vaughan has parks and
+                conservation areas, which add to the city's mutually beneficial urban and green environment.</p>
+            <a href="#Vaughan"></a><img style="width: 470px; height: 160;"
+                src="https://myvmc.ca/wp-content/uploads/2020/12/NORM-LI_201210_EXT_AERIAL_VF_00-option-scaled.jpg">
+        </div>
+    </div>
+
+    <div class="bgimg-5">
+        <div class="caption">
+            <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">Brampton</span>
+        </div>
+    </div>
+
+    <div style="position:relative;">
+        <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+            <p>In Ontario, Canada's Greater Toronto Area (GTA), sits the city of Brampton. One of the nation's
+                fastest-growing cities, Brampton is well-known for its cultural diversity. It functions as a thriving
+                suburban neighborhood with an array of business, industrial, and residential spaces. Brampton boasts a
+                sizeable South Asian population, which adds to the city's diverse cultural fabric and is evident in its
+                festivals, local fare, and social gatherings. Attractions in the city include the Rose Theatre, which
+                presents a range of shows and activities. The manufacturing, retail, and technology sectors make up
+                Brampton's economy. The city has also been engaged in projects related to urban development, such as the
+                establishment of parks and public areas.</p><br>
+            <a href="#Brampton"></a><img style="width: 470px; height: 140;"
+                src="https://th.bing.com/th/id/R.c6a6343aa5f1d2eb30d6d8495dfbe0be?rik=J0eOQMA8GZ3VNA&riu=http%3a%2f%2fperspective.ca%2fwp-content%2fuploads%2f2017%2f11%2fBramptonDowntown.jpg&ehk=NCakwqZvB%2fjm4ORddapFJmXTx88TnglNT3R3S%2b6xN3A%3d&risl=&pid=ImgRaw&r=0">
+        </div>
+    </div>
+    <div class="bgimg-6">
+        <div class="caption">
+            <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">Hamilton</span>
+        </div>
+    </div>
+
+    <div style="position:relative;">
+        <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+            <p>Situated on the western tip of Lake Ontario, Hamilton is a city in the province of Ontario, Canada.
+                Hamilton, a city noted for its industrial past and advantageous location, has developed into a vibrant,
+                diverse city. The city is well-known for its efforts at revitalization, transforming discarded
+                industrial areas into neighborhoods and parks. Hamilton is home to a thriving student population because
+                of its educational institutions, which consist of Mohawk College and McMaster University. The Royal
+                Botanical Gardens and the Hamilton Art Gallery serve as two of the city's cultural landmarks. Outdoor
+                enthusiasts can also explore the Bruce Trail and the Niagara Escarpment's natural beauty. Beyond its
+                traditional manufacturing foundation, Hamilton's economy now includes a diversified range of industries,
+                with the healthcare and education sectors playing a major role.</p><br>
+            <a href="#Hamilton"></a><img
+                src="https://th.bing.com/th/id/OIP.hUI-PSljf1j-eTH5zAeVdAHaE8?rs=1&pid=ImgDetMain">
+        </div>
+    </div>
+
+
+    <div class="bgimg-1">
+        <div class="caption">
+            <span class="border">THE END!</span>
+            <button onclick="topFunction()" id="myBtn" title="Go to top">&#8593; Top</button>
+        </div>
+    </div>
+    <script>// When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            const mybutton = document.getElementById("myBtn");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+        var myArray=("rye.soobramanie@student.tdsb.on.ca", "ricky.patel@student.tdsb.on.ca");
+        document.write(myArray)
+
+    </script>
+
+    <footer>
+        <a href="rye.soobramanie@student.tdsb.on.ca">Rye's contact</a></p>
+    </footer>
+
+</body>
+
+</html>

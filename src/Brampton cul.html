@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Brampton</title>
+    <link rel="icon" type="image/x-icon" href="brampton favicon.jpg">
+</head>
+    <style>
+       #navbar {
+            overflow: hidden;
+            background-color: #353535;
+             
+        }
+        #navbar a {
+            float:left;
+            color: #ffffff;
+            text-align: center;
+            padding: 15px 105px;
+            text-decoration: none;
+            font-size: 22px;
+            text-transform: capitalize;
+            font: bold;
+        }
+       /*hover over the navbar */
+        #navbar a:hover {
+            background-color: #181a18;
+            color: rgb(255, 255, 255);
+        }
+        #navbar a.active {
+            background-color: #04AA6D;
+            color: white;
+        }
+        .content {
+            padding: 5px;
+        }
+        
+        /* Style the tab */
+        .tab {
+            float: left;
+            border: none;
+            background-color: #d1d0d0;
+            width: 30%;
+            height: 398px;
+        }
+
+        /* Style the buttons inside the tab */
+        .tab button {
+            display: block;
+            background-color: inherit;
+            color: black;
+            padding:22px;
+            height: 80px;
+            width: 100%;
+            border: none;
+            outline: none;
+            text-align: left;
+            cursor: pointer;
+            transition: 0.6s;
+            font-size: 20px;
+        }
+
+        /* Change background color of buttons on hover */
+        .tab button:hover {
+            background-color: #7c7c7c;
+        }
+
+        /* Create an active/current "tab button" class */
+        .tab button.active {
+            background-color: #ccc;
+        }
+
+        /* Style the tab content */
+        .tabcontent {
+            float: right;
+            padding: 0px 12px;
+            border: 1px solid #ccc;
+            width: 68.35%;
+            border-left: none;
+            height: 398px;
+        }
+        table,tr,td,th {
+            border-collapse: collapse;
+            border: 2px solid black;
+        }
+        h2 {
+            font-size: 31px;
+        }
+        h4 {
+            font-size: 26px;
+        }
+        h5 {
+            font-size: 20px;
+        }
+    </style>
+    <body>
+        <div id="navbar">
+            <a href="Vaughan.html">Vaughan</a>
+            <a href="Hamilton cul.html">Hamilton</a>
+            <a class="active" href="Homepage.html">Homepage</a>
+            <a href="Toronto cul.html">Toronto</a>
+            <a href="ottawa.html">Ottawa</a>
+        </div>
+        <header>
+            <img src="brampton header.webp" height="780px" width="100%">
+            <div class="centered">
+                <h1 align="center">BRAMPTON</h1>
+            </div>
+        </header>
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'Housing Options')"id="defaultOpen">Housing Options</button>
+            <button class="tablinks" onclick="openCity(event, 'Job Opportunities')">Job Opportunities</button>
+            <button class="tablinks" onclick="openCity(event, 'Education')">Education</button>
+            <button class="tablinks" onclick="openCity(event, 'Healthcare')">Healthcare</button>
+            <button class="tablinks" onclick="openCity(event, 'Transportation')">Transportation</button>
+        </div>
+        <div id="Housing Options" class="tabcontent">
+            <h3>Housing Options</h3>
+            <p>The property prices in Brampton are way less than the property prices in Toronto.<br> The property in Brampton consists of
+            Detached, Semi-Detached, Freehold Townhouse, to Apartments. The average sale price of a home in Brampton is currently
+            $987,085, which is 0.5% more than it was a year ago.<br>
+            The average price of a detached house in Brampton was up 1% from December 2022, giving the average price $1.15 million.<br>
+            The average price of a semi-detached house is $896 which decreased by 0.4% from the previous year.<br>
+            At $828k, the average price of a freehold townhouse has dropped by 3.4% from the prior year.<br>
+            The average cost of a condo townhouse dropped to $661k from the previous year by 2.6%.</p>
+            <img src="c:\Users\Radhe\Desktop\Ricky\culminatinhg\housing toronto 1 pic.jpg" width="300px" height="195px"></a>
+            <img src="c:\Users\Radhe\Desktop\Ricky\culminatinhg\housing toronto 3 pic.jpg" width="300px" height="195px"></a>
+        </div>
+
+        <div id="Job Opportunities" class="tabcontent">
+            <h3>Job Opportunities</h3>
+            <p>Online Job Portals: To look for jobs in Brampton, use well-known job search platforms like Indeed, Monster, and
+            LinkedIn. Based on your criteria, including industry, job type, and experience level, you may filter the results.<br>
+            Company Websites: Go to the Brampton-based businesses' websites. Many companies list job vacancies straight on their
+            websites. Find businesses that interest you, then often visit their career sites.
+            
+            Manufacturing and Warehousing: The industrial and logistics sectors are heavily represented in Brampton. Opportunities
+            for employment might be found in production, packing, assembly, and warehousing.<br>
+            Healthcare: There are healthcare institutions in Brampton that could be able to provide employment for medical
+            professionals, including nurses, medical assistants, support workers, and administrative staff.<br>
+            Customer service: A variety of Brampton-based organizations, like call centers and service-focused enterprises, provide
+            customer service jobs that call for effective problem-solving and communication abilities.<br>
+            
+            <table align="center">
+                <tr>
+                    <th>Labour Type</th>
+                    <td>Construction industry</td>
+                    <td> Manufacturing sector</td>
+                    <td>Financial & insurance services</td>
+                    <td>Wholesale & retail services</td>
+                    <td>Public administration</td>
+                    <td>Transportation, warehousing & utilities</td>
+                    <td>Education, health & social services</td>
+                    <td>Other</td>
+                </tr>
+                <tr>
+                    <th>Percent</th>
+                    <td>3.5%</td>
+                    <td>8.9%</td>
+                    <td>3.3%</td>
+                    <td>10.4%</td>
+                    <td>2.0%</td>
+                    <td>8.2%</td>
+                    <td>7.9%</td>
+                    <td>16.8%</td>
+                </tr>
+            </table>
+            In comparison to the national average, Brampton's unemployment rate is 21% lower. resulting in a 5.1% unemployment rate.</p>
+        </div>
+
+        <div id="Education" class="tabcontent">
+            <h3>Education</h3>
+            <p>With the greatest resources available, Brampton, Ontario, delivers effective education that will assist its students
+            succeed in the future.<br>
+            A higher percentage of people in Brampton—30.3% of those over the age of 15—completed a bachelor's degree, certificate,
+            or diploma from a university, up from 24.3% in 2016.<br>
+            The most popular post-secondary fields were public administration, business, and management (76,520). Architecture,
+            engineering, and related technologies in second place (54,525), followed by Health and associated subjects were in third
+            place (35,120).<br>
+            Out of the 229,040 adults in the province who have completed a postsecondary certificate, diploma, or degree, 50.6%
+            studied there, 2.4% studied outside the province but still in Canada, and 47% studied overseas.</p>
+                        <img src="bramp ed.webp" width="300px" height="195px"></a>
+                        <img src="bramp ed2.webp" width="300px" height="195px"></a>
+        </div>
+
+        <div id="Healthcare" class="tabcontent">
+            <h3>Healthcare</h3>
+            <p>The free healthcare system in Brampton, Canada, is one of its best features. You are qualified for Ontario Health
+            Insurance Plan-covered medical treatments after three months of residency in the province.<br>
+            A project in progress in Brampton will enable it to offer a,<br>
+            24-hour emergency department,<br>
+            New and enhanced services for seniors,<br>
+            new and enhanced mental health and addictions services,<br>
+            Rehabilitation and complex continuing care services,<br>
+            250 inpatient beds with space to build one hundred more beds in the future.</p>
+            <img src="bramp health.webp" width="300px" height="175px"></a>
+            <img src="bramp house2.webp" width="300px" height="175px"></a>
+        </div>
+
+        <div id="Transportation" class="tabcontent">
+            <h3>Transportation</h3>
+            <p>Every citizen may travel easily thanks to Brampton Transit, its own bus system. In Brampton, there are two types of
+            fares:<br> Cash Fare, which costs $4.50 every trip, and Presto, which costs $3.40 for adults, $2,80 for youth, and $1.75 for
+            seniors. Regardless of the brand or kind, buying a car costs the same in every city.</p>
+            <img src="bramp trans.jpg" width="300px" height="195px"></a>
+            <img src="bramp trans2.jpg" width="300px" height="195px"></a>
+            <img src="bramp trans3.png" width="300px" height="195px"></a>
+        </div>
+        <hr>
+
+    
+        <h2 align="center">Cost Of Living Comparison And Brampton's Unique Feature</h2>
+        <h5 align="center">Living expenses in Brampton are 48% lower than in New York City.<br>
+        With an average monthly cost of $2088 for an individual and $4615 for a family of four, Brampton's cost of living is
+        quite low when compared to New York.
+        Brampton has a $99,758 median household income. In Brampton, the key income distribution is as follows: 2.3% make
+        $300,000 or more, 13.4% earn between $80,000 and $100,000, and 3.6% earn less than $20,000.
+        <br>Brampton’s unique feature is that it holds a famous church that is known across all of Ontario. The church in particular is St.Paul’s United Church.</h5>
+        <br>
+        <h4 align="center">We rate the affordability of Brampton a 5.5 out of 10, with 10 being the most affordable.</h4>
+        <p style="color: #000000;">5.5/10 as a percent:
+            <script style="color: #000000;">document.write((5.5 / 10) * 100 + '%');</script>
+        </p>
+
+
+        <script>
+            //It keeps an eye on when you scroll by attaching a function (myFunction()) to the scroll event of the webpage. It finds the navigation bar on the page using its unique ID ("navbar"). It figures out the first position of the navigation bar on the page.If you have scrolled enough, it makes the navigation bar sticky by adding a "sticky" class to it.
+            window.onscroll = function () { myFunction() };
+
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+
+            function myFunction() {
+                if (window.pageYOffset >= sticky) {
+                    navbar.classList.add("sticky")
+                } else {
+                    navbar.classList.remove("sticky");
+                }
+            }
+        </script>
+
+        <script>
+            function openCity(evt, cityName) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                document.getElementById(cityName).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+
+            // Get the element with id="defaultOpen" and click on it
+            document.getElementById("defaultOpen").click();
+        </script>
+
+
+    </body>
+    <a style="font-size: 34px;" align="center" href="https://brampton.ca/en">Brampton website offical</a>
+    
+</html>

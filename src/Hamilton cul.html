@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Hamilton</title>
+    <link rel="icon" type="image/x-icon" href="hamilton favicon.svg">
+</head>
+<style>
+    body {
+        background-image: url("Hamilton body pic2.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    header {
+        padding: 7px;
+        top: 120px;
+        text-align: center;
+        font-size: 65px;
+        color: white;
+        font: bold;
+    }
+
+    #navbar {
+        overflow: hidden;
+        background-color: #353535;
+
+    }
+
+    #navbar a {
+        float: left;
+        color: #ffffff;
+        text-align: center;
+        padding: 15px 105px;
+        text-decoration: none;
+        font-size: 22px;
+        text-transform: capitalize;
+        font: bold;
+    }
+
+    /*hover over the navbar */
+    #navbar a:hover {
+        background-color: #181a18;
+        color: rgb(255, 255, 255);
+    }
+
+    #navbar a.active {
+        background-color: #04AA6D;
+        color: white;
+    }
+
+    .content {
+        padding: 5px;
+    }
+
+    /* Allowing the navbar to stick to the top of the page when scrolled down */
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 99%;
+    }
+
+    /* sticky navbar*/
+    .sticky+.content {
+        padding-top: 60px;
+    }
+    .column {
+        float: left;
+        width: 40.33%;
+        padding: 10px;
+    }
+    .column2 {
+        float: right;
+        width: 40.33%;
+        padding: 5px;
+    }
+
+    /* Clearfix (clear floats) */
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    /* allows the bos to flip revealing the back side*/
+    .flip-box {
+        background-color: transparent;
+        width: 600px;
+        height: 300px;
+        border: 1px solid #f1f1f1;
+        perspective: 1000px;
+    }
+    /* After the box is fliped the inside of that*/
+    .flip-box-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+    }
+    /*rotates the box once the mouse reaches it*/
+    .flip-box:hover .flip-box-inner {
+        transform: rotateY(180deg);
+    }
+
+    .flip-box-front, .flip-box-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+
+    .flip-box-front {
+        background-color: #bbb;
+        color: black;
+    }
+
+    .flip-box-back {
+        background-color: rgb(81, 94, 107);
+        color: white;
+        transform: rotateY(180deg);
+    }
+    p {
+        font-size: 18px;
+    }
+    h3 {
+        font-size: 34px;
+        color: #ffffff;
+        text-decoration: underline;
+        font-weight: bold;
+    }
+</style>
+<body>
+    <div id="navbar">
+        <a href="Vaughan.html">Vaughan</a>
+        <a href="Brampton cul.html">Brampton</a>
+        <a class="active" href="Homepage.html">Homepage</a>
+        <a href="Toronto cul.html">Toronto</a>
+        <a href="ottawa.html">Ottawa</a>
+    </div>
+        <br>
+        <br>
+    <header><h1><b>HAMILTON</b></header><h1></header>
+        <br>
+        <br>
+
+        <div style="background-color: rgb(255, 255, 255); padding-top: 5px; padding-bottom: 12px;">
+            <div class="row">
+                <div class="column">
+                    <div class="flip-box">
+                        <div class="flip-box-inner">
+                            <div class="flip-box-front">
+                                <h2>Housing Options<br><img src="house hamilton.webp" width="300px"></h2>
+                            </div>
+                            <div class="flip-box-back">
+                                <p>The property in Hamilton In Hamilton, the average sales price for a property is now $760,376 as of December 2023, it was
+                                up 1.3% from the previous year and down 11.8% over the previous two years. Nonetheless, throughout the previous five
+                                years, the average property price has risen by 55%.<br>
+                                The average price of a detached home rose to $822k, a 0.6% annual gain.<br>
+                                The average price of a Semi-Detached house is decreased by 1.6%, making the average price $688,039<br>
+                                The average price of a townhouse rose to $668k, a 0.6% annual rise.<br>
+                                The average price of a apartment is $428,524, which is a 9.1% decrease from Dec. 2022</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <div class="column2">
+                        <div class="flip-box">
+                            <div class="flip-box-inner">
+                                <div class="flip-box-front">
+                                    <h2>Job Opportunities<br><img src="jobs hamilton.jpg" width="400px"></h2>
+                                </div>
+                                <div class="flip-box-back">
+                                    <p>As of December 2023, the unemployment rate in Hamilton was 5.6%, a 0.3% increase over the previous month. The jobless
+                                    rate was 7.6% lower than the June 2020 peak and lower than the long-term average.
+                                    In comparison to the previous month, there were 700 fewer full-time employment in December 2023. In December, there were
+                                    1,500 fewer jobs overall due to the loss of 800 part-time roles.
+                                    Although full-time employment was 2,700 jobs above the September 2023 low, it was still 1,400 jobs behind the peak in
+                                    July 2023.<br>
+                                    Healthcare: Hamilton's healthcare industry provides a range of employment options, such as jobs in clinics, hospitals,
+                                    and research facilities.<br>
+                                    Finance and Business Services: Hamilton, a major economic center, offers employment chances in banking, business
+                                    services, and finance.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="background-color: rgb(255, 255, 255); padding-top: 5px; padding-bottom: 12px;">
+            <div class="row">
+                <div class="column">
+                    <div class="flip-box">
+                        <div class="flip-box-inner">
+                            <div class="flip-box-front">
+                                <h2>Education<br><img src="education hamilton.jpg" width="350px"></h2>
+                            </div>
+                            <div class="flip-box-back">
+                                <p>For students, the average monthly cost of living in Hamilton is between CA$ 1,908 and CA$ 2,455. Hamilton may thus be a
+                                great option for overseas students looking for a low-cost, high-quality lifestyle.<br> Hamilton is proud of its robust
+                                'Public school' system, which in Canada only refers to free education provided by the government.<br>
+                                <img src="education hamilton2.jpg" width="400px"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column2">
+                    <div class="flip-box">
+                        <div class="flip-box-inner">
+                            <div class="flip-box-front">
+                                <h2>Healthcare<br><img src="healthcare hamilton.webp" width="260px"></h2>
+                            </div>
+                            <div class="flip-box-back">
+                                <p>The free healthcare system in Hamilton, Canada, is one of its best features.
+                                Hamilton is a hub for professional training and healthcare in the region.
+                                The City of Hamilton is offering free health services to you and your family, regardless of how long you have been in
+                                the country.<br><br>Canada's most gifted medical experts work at Hamilton's hospitals, which provide cutting edge care. Hamilton
+                                is blessed with an abundance of excellent medical facilities and services.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div style="background-color: rgb(255, 255, 255); padding-top: 5px; padding-bottom: 12px;">
+            <div class="row">
+                <div class="column">
+                    <div class="flip-box">
+                        <div class="flip-box-inner">
+                            <div class="flip-box-front">
+                                <h2>Transportation<br><img src="transportation hamilton.avif" width="310px"></h2>
+                            </div>
+                            <div class="flip-box-back">
+                                <p>There are several ways to get around Hamilton, including local buses, taxis, ridesharing, and e-bikes.<br>
+                                The Local Buses: Extensive public bus routes across the city, Wheelchair accessible and air-conditioned,Equipped with bicycle racks<br>
+                                By Taxi: Blue Line Taxi-(905-525-BLUE), Hamilton Cab-(905-777-7777 or 1-877-525-2500)<br>
+                                RideShares: Uber-(Convenient,cashless travel any time of the day), Lyft-(Download the Lyft app to get matched with local drivers)<br>
+                                Communauto Ontario-Reserve a vehicle across the city for a few hours or longer with plenty of flexibility.<br>
+                                E-Bikes: Explore on two wheels with an e-Scooter rental</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column2">
+                    <div class="flip-box">
+                        <div class="flip-box-inner">
+                            <div class="flip-box-front">
+                                <h2>Cost of living comparison<br>&<br>Unique Feature</h2>
+                            </div>
+                            <div class="flip-box-back">
+                                <p>Hamilton has a 49% lower cost of living than New York City. When rent is excluded, Hamilton is 4.4% less costly than
+                                Toronto.<br>
+                                In comparison to New York, Hamiltons has a very inexpensive cost of living, with an average monthly expense of $2044 for
+                                an individual and $4597 for a family of four.<br><br><br>The thing that makes Hamilton unique is its Historic sites. Hamiltons hold a great amount of history and historic
+                                structures. Some of these sites are the Dundurn Castle, HMCS Haida National Historic Site and the Cathedral Basilica of
+                                Christ the King.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h3 align="center">We rate the affordability of Hamilton a 7.5 out of 10, with 10 being the most affordable.</h3>
+    <p style="color: #f1f1f1;">7.5/10 as a percent:
+        <script style="color: #f1f1f1;">document.write((7.5 / 10) * 100 + '%');</script></p>
+    <a style="font-size: 34px;" align="center" href="https://hamilton.ca/en">Hamilton website offical</a>
+
+
+
+</body>
+</html>

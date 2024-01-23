@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>HomePage</title>
+    <link rel="icon" type="image/x-icon" href="toronto favicon.png">
+</head>
+    <style>
+        body {
+            background-image:url("toronto header.webp");
+            background-repeat: no-repeat;
+            background-size:cover;
+        }
+        header {
+            padding: 7px;
+            text-align: center;
+            font-size: 60px;
+            color: white;
+            font: bold;
+        }
+        #navbar {
+            overflow: hidden;
+            background-color: #353535;
+             
+        }
+        #navbar a {
+            float:left;
+            color: #ffffff;
+            text-align: center;
+            padding: 15px 105px;
+            text-decoration: none;
+            font-size: 22px;
+            text-transform: capitalize;
+            font: bold;
+        }
+       /*hover over the navbar */
+        #navbar a:hover {
+            background-color: #181a18;
+            color: rgb(255, 255, 255);
+        }
+        #navbar a.active {
+            background-color: #04AA6D;
+            color: white;
+        }
+        .content {
+            padding: 5px;
+        }
+        /* Allowing the navbar to stick to the top of the page when scrolled down */
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 99%;
+        }
+        /* sticky navbar*/
+        .sticky+ .content {
+            padding-top: 60px;
+        }
+        .accordion {
+            background-color: #eee;
+            color: #444;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border:#181a18;
+            text-align: center;
+            font-size: 18px;
+            transition: 0.8s;
+        }
+        /* the hover colour of the accordion */
+        .active, .accordion:hover {
+            background-color: #b2b2b2; 
+        }
+
+        .panel {
+            padding: 5px 18px;
+            display: none;
+            background-color: white;
+            overflow: hidden;
+        }
+        p {
+            font-size: 18px;
+            text-align: left;
+        }
+        h3 {
+            text-align: center;
+            color: #031424;
+            font-size: 28px;
+        }
+        h2 {
+            text-align: center;
+            color: #000000;
+            font-size: 36px;
+        }
+        h4 {
+            text-align: center;
+            color: #061420;
+            font-size: 21px;
+        }
+    </style>
+    <body>
+        <div id="navbar">
+            <a href="Vaughan.html">Vaughan</a>
+            <a href="Brampton cul.html">Brampton</a>
+            <a class="active" href="Homepage.html">Homepage</a>
+            <a href="Hamilton cul.html">Hamilton</a>
+            <a href="ottawa.html">Ottawa</a>
+        </div>
+        <header>
+            <h1>TORONTO</h1>
+        </header>
+        <br>
+
+        <div class="content">
+        <button class="accordion">Housing Options</button>
+        <div class="panel"><p>The housing market in Toronto continues to shock citizens as many types of housing increase in price making it very
+        difficult to own one. There are many different types of property in Toronto, ranging from Detached, Semi-Detached,
+        Freehold Townhouse, to Apartments.<br>The average price of a detached home was $1,418,323 in December 2023, a 2.4% increase from December 2022, an average
+        year-over-year increase of 2%.<br>Semi-detached home prices also increased by 1.8% from December 2022, resulting in an average price of $1,027,432. This
+        gives an average year-over-year increase of 2%.<br>Freehold townhouses are seeing prices at $996,162, up 4.4% from December 2022, which gives an average year-over-year
+        increase of 4%.<br>Apartments were the only property type to see an annual decrease in prices, down 3.3% from December to an average of
+        $682,525 nowadays. An average year-over-year decrease of 3%.</p>
+        <img src="c:\Users\Radhe\Desktop\Ricky\culminatinhg\housing toronto 2 pic.jpg" width="380px"></a>
+        <img src="c:\Users\Radhe\Desktop\Ricky\culminatinhg\housing toronto 1 pic.jpg" width="380px" height="256px"></a>
+        <img src="c:\Users\Radhe\Desktop\Ricky\culminatinhg\housing toronto 3 pic.jpg" width="380px" height="256px"></a>
+        </div>
+
+        <button class="accordion">Job Opportunities</button>
+        <div class="panel"><p>Toronto has many jobs. As the largest city in Canada, it offers a variety of opportunities, but the competition is
+        fierce.<br>As of December 2023, the unemployment rate in Toronto was 6.7%, a 0.1% increase from the previous month. The
+        unemployment rate is below the long-run average and was 8.4% lower than its peak in July 2020.<br>In comparison to the previous month, there were 200 fewer full-time jobs in December 2023. In December, there were 8,000
+        fewer employments overall due to the loss of 7,800 part-time posts.<br>Even so, full-time employment was still below July 2023's peak by 71,200 jobs.<br>
+        There were more full-time jobs in December than in November in the following industries: manufacturing, transportation &
+        warehousing, professional & scientific services, business & building services, education, and hotel & food services.</p>
+        <img src="job opp pic 1.webp" width="380px"></a>
+        <img src="job opp pic 2.webp" width="380px" height="256px"></a>
+        <img src="job opp pic 3.webp" width="380px" height="256px"></a>
+        </div>
+
+        <button class="accordion">Education</button>
+        <div class="panel"><p>In Canada, the public school education system covers the costs of school for all children of Canadian citizens and
+        permanent residents from kindergarten through the completion of high school. This usually means that students between
+        the ages of five or six and eighteen are free to attend school.<br>University and College- Depending on the course, the average annual tuition cost might vary from 55,000$ to 70,000$. The
+        cost of tuition varies based on the course you have chosen. To find out the exact figure, students can go to the
+        university's website where they are applying. College is usually less than University.</p>
+    <img src="education pic 1.jpg" width="380px"></a>
+    <img src="education pic 2.jpg" width="380px" height="256px"></a>
+    <img src="education pic 3.jpg" width="380px" height="256px"></a>
+        </div>
+
+        <button class="accordion">Healthcare</button>
+        <div class="panel"><p>The great thing about Toronto, Canada is that healthcare is free.<br>No matter how long you have been in Canada, you and your family can receive free health services from the City of
+        Toronto: After three months of residency in Ontario, you are eligible for health care services covered by the Ontario
+        Health Insurance Plan.</p>
+    <img src="heal pic 1.png" width="380px"></a>
+    <img src="heal pic 2.png" width="380px" height="256px"></a>
+    <img src="heal pic 3.png" width="380px" height="256px"></a>
+        </div>
+
+        <button class="accordion">Transportation</button>
+        <div class="panel"><p>In any city Transportation is a requirement and Toronto is no exception. Whether it's by bus or car transportation will
+        cost you.<br>Taking the bus will cost about 3.30$ for an adult(20-64), 2.30$ for a youth(13-19) and 2.25$ for a senior citizen(65+).
+        In Toronto there is a transit system called TTC which manages all the bus transportation in Toronto.<br>Gas is a problem everywhere and now that it's increasing it's become an even bigger problem, Toronto is no different.
+        The average cost of gas in Toronto as of January 17, 2024, is 143.9 cents per liter. The prices have varied over the
+        months, with a high of 150.9 cents/litre in December 2023 and a low of 139.9 cents/litre in the same month but
+        nevertheless its increased.</p>
+        <img src="transportation pic 1.jpg" width="380px"></a>
+        <img src="transportation pic 2.jpg" width="380px" height="256px"></a>
+        <img src="transportation pic 3.jpg" width="380px" height="256px"></a>
+    </div>
+    <hr>
+        
+        <div style="background-color: rgb(255, 255, 255); padding-top: 5px; padding-bottom: 12px;">
+        <h2><b>Cost Of Living Comparison And Toronto's Unique Feature</b></h2>
+        <h4>The cost of living in Toronto is relatively small compared to New York with an average of $2544 for one person and $5671
+        for a family of 4. When rent is excluded, Toronto is 28.4% less expensive than New York. Toronto's average rent is 49.7%
+        less than New York's.<br>
+        A unique feature of Toronto is that it holds one of the largest buildings in the world. This building is called the CN
+        tower and is a tourist attraction for many and a place for comfort for many people around the area.</h4><br>
+        <h3>We rate the affordability of Toronto a 6 out of 10, with 10 being the most
+        affordable.</h3>
+        <p style="color: #000000;">6/10 as a percent:
+            <script style="color: #f1f1f1;">document.write((6 / 10) * 100 + '%');</script>
+        </p>
+        </div>
+
+        <script>
+        //It keeps an eye on when you scroll by attaching a function (myFunction()) to the scroll event of the webpage. It finds the navigation bar on the page using its unique ID ("navbar"). It figures out the first position of the navigation bar on the page.If you have scrolled enough, it makes the navigation bar sticky by adding a "sticky" class to it.
+           window.onscroll = function () { myFunction() };
+
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+
+            function myFunction() {
+                if (window.pageYOffset >= sticky) {
+                    navbar.classList.add("sticky")
+                } else {
+                    navbar.classList.remove("sticky");
+                }
+            }
+        </script>
+
+        <script>
+            //when an accordion header is clicked, this code toggles the "active" class on the clicked header and toggles the display of the associated panel between "block" and "none." 
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.display === "block") {
+                        panel.style.display = "none";
+                    } else {
+                        panel.style.display = "block";
+                    }
+                });
+            }
+        </script>
+
+    </body>
+    <a style="font-size: 34px;" text-align="center" href="https://toronro.ca/en">Toronto website offical</a>
+</html>
